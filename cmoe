@@ -1,0 +1,24 @@
+#!/bin/bash
+#Compile .moe files with the gcc compiler
+
+#Transform .moe files into .c files
+args=()
+for currarg in "$@" ; do
+    if [[ $currarg =~ \.moe$ ]] ; then
+        cp "$currarg" "${currarg%.moe}.c"
+        args+=("${currarg%.moe}.c")
+    else
+        args+=("$currarg")
+    fi
+done
+
+#Compile the files
+gcc ${args[@]} -include ~/.moe/moemoekyuun.h
+result=$?
+
+#Return value
+if [ $result -ne 0 ] ; then
+    echo "UWAAAAAAAAAAAAAA !!!! TAIHEN DESUYO !! (⋟﹏⋞)"
+else
+    echo "Moe moe kyuun !! (｡>﹏<｡)"
+fi
