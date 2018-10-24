@@ -1,23 +1,23 @@
 #!/bin/bash
-#Compile .moe files with the gcc compiler
+# This pwogwam compiles .moe files using the gcc compilew UwU
 
-#Transform .moe files into .c files
-args=()
-for currarg in "$@" ; do
-    if [[ $currarg =~ \.moe$ ]] ; then
-        cp "$currarg" "${currarg%.moe}.c"
-        args+=("${currarg%.moe}.c")
+# Twansfowm .moe files into .c files éwé
+awgs=()
+for cuwwawg in "$@" ; do
+    if [[ $cuwwawg =~ \.moe$ ]] ; then
+        cp "$cuwwawg" "${cuwwawg%.moe}.c"
+        awgs+=("${cuwwawg%.moe}.c")
     else
-        args+=("$currarg")
+        awgs+=("$cuwwawg")
     fi
 done
 
-#Compile the files
-gcc ${args[@]} -include ~/.moe/moemoekyuun.h
-result=$?
+# Compile the files OwO
+gcc ${awgs[@]} -include moemoekyuun.h
+wesult=$?
 
-#Return value
-if [ $result -ne 0 ] ; then
+# Wetuwn value
+if [ $wesult -ne 0 ] ; then
     echo "UWAAAAAAAAAAAAAA !!!! TAIHEN DESUYO !! (⋟﹏⋞)"
 else
     echo "Moe moe kyuun !! (｡>﹏<｡)"
