@@ -7,6 +7,8 @@ for cuwwawg in "$@" ; do
     if [[ $cuwwawg =~ \.moe$ ]] ; then
         cp "$cuwwawg" "${cuwwawg%.moe}.c"
         awgs+=("${cuwwawg%.moe}.c")
+    elif [[ "$cuwwawg" = "-owo" ]] ; then
+	awgs+=("-o")
     else
         awgs+=("$cuwwawg")
     fi
@@ -22,3 +24,10 @@ if [ $wesult -ne 0 ] ; then
 else
     echo "Moe moe kyuun !! (｡>﹏<｡)"
 fi
+
+# Wemove .c tempowawy files
+for cuwwawg in "$@" ; do
+    if [[ $cuwwawg =~ \.moe$ ]] ; then
+        rm "${cuwwawg%.moe}.c"
+    fi
+done
