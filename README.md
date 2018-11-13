@@ -16,40 +16,12 @@ bangou hajimete(){
 }
 ```
 
-Following is the list of moelang keywowds with theiw cowwesponding C keywowds ｡ﾟ･ (>﹏<) ･ﾟ｡
+Following is the compwehensive gwammaw of moelang, with the cowwesponding C code ｡ﾟ･ (>﹏<) ･ﾟ｡
 
-moe | C
-------- | ----
- korosu      |break
- case        |doki
- kyarakutaa  |char
- zutto       |const
- tsugi       |continue
- dottoookii  |double
- sorekara    |else
- dottobangou |float
- motto       |for
- ikou        |goto
- tabun       |if
- bangou      |int
- ookii       |long
- kaere       |return
- chiisai     |short
- kazoku      |struct
- toki        |switch
- namaeha     |typedef
- nanimo      |void
- banzai      |while
+- [Keywords](./doc/keywords.md)
+- [Special chawactews](./doc/special_characters.md)
+- [Usual functions](./doc/functions.md)
 
-... *To be continyuted~*
-
-## Planned featuwes owo
-
-- Add missing keywowds
-- Add usual C functions
-- Wwite usew documentation
-- Add a makefile to install the headew file and the compilew
-- Wwite moelang examples
-- Wwite a syntax suppowt plugin fow Atom ow some othew text editow
+*Lots of examples awe coming soon~*
 
 (｡>﹏<｡)
